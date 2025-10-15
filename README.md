@@ -31,7 +31,7 @@ Through this project, you’ll learn how to:
 
 ## 🧰 ETL Architecture
 
-![ETL Tool](images/ELT%20tool.png)
+<img src="https://github.com/BlueElf246/covid_data_platform/blob/main/images/ELT%20tool.png?raw=true" alt="image" width=“1000” height=“1000”>
 
 ---
 
@@ -96,7 +96,7 @@ Run the 'load_DWH' dag from airflow
 ## Run without airflow
 Run seperate .py files
 ```
-![Data Script Flow](images/Scripts.png)
+<img src="https://github.com/BlueElf246/covid_data_platform/blob/main/images/Scripts.png?raw=true" alt="image" width=“1000” height=“1000”>
 
 
 
