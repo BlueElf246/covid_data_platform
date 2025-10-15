@@ -95,7 +95,7 @@ Please follow the instruction
 Run the 'load_DWH' dag from airflow
 ## Run without airflow
 Run seperate .py files
-
+```
 ![Data Script Flow](images/Scripts.png)
 
 
