@@ -79,9 +79,10 @@ Through this project, you’ll learn how to:
 This project can be run idenpendently with or without airflow. 
 Refer configs_sample and rename into configs
 ## Clone repo
+```
 git clone https://github.com/BlueElf246/covid_data_platform.git
 cd project
-
+```
 ## Install dependencies
 ```
 python3 -m venv venv
@@ -90,6 +91,7 @@ pip install -r requirements.txt
 ## Install Airflow
 ```
 Please follow the instruction
+install_airflow.txt
 ```
 ## Run with airflow
 Run the 'load_DWH' dag from airflow
