@@ -1,0 +1,20 @@
+data_source_1:
+  type: data source
+  host: localhost
+  port: 5432
+  dbname: postgres
+  user: covid19
+  password: covid19
+data_lake_aws:
+  # S3_BUCKET: 'covid192406'
+  # S3_KEY: 'transformed_data.csv'
+  AWS_ACCESS_KEY: 
+  AWS_SECRET_KEY: 
+  AWS_REGION: 
+data_warehouse:
+  type: data warehouse
+  host: localhost
+  port: 5432
+  dbname: postgres
+  user: covid19
+  password: covid19

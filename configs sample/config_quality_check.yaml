@@ -1,0 +1,27 @@
+fact_covid_3:
+  not_null_cols:
+    - dim_iso_code
+    - dim_iso_code_id
+    - dim_date
+    - m_total_cases
+    - m_total_deaths
+  unique_col:
+    - [dim_date, dim_iso_code]
+  ref_table:
+    - { column: dim_iso_code_id, ref_table: dim_country_code_scd, ref_column: dim_country_scd_id }
+  value_range_cols:
+    - { column: m_new_cases, min: 0 }
+    - { column: m_new_deaths, min: 0 }
+    - { column: m_total_cases, min: 0 }
+    - { column: m_total_deaths, min: 0 }
+
+dim_country_code_scd:
+  not_null_cols:
+    - iso_code
+    - continent
+    - location
+  unique_col:
+    - iso_code
+  ref_table: []
+  value_range_cols:
+    - { column: median_age, min: 0 , max: 100}

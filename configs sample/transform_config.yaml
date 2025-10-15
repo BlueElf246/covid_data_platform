@@ -1,0 +1,20 @@
+data_source_1:
+  DB_TYPE: POSTGRES
+  PG_HOST: localhost
+  PG_PORT: 5432
+  PG_DB: postgres
+  PG_USER: covid19
+  PG_PASSWORD: covid19
+data_lake_aws:
+  # S3_BUCKET: 'covid192406'
+  # S3_KEY: 'transformed_data.csv'
+  AWS_ACCESS_KEY: 
+  AWS_SECRET_KEY: 
+  AWS_REGION: 
+data_warehouse:
+  DB_TYPE: POSTGRES
+  PG_HOST: localhost
+  PG_PORT: 5432
+  PG_DB: postgres
+  PG_USER: covid19
+  PG_PASSWORD: covid19
