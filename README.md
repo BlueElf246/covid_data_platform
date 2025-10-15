@@ -1,12 +1,47 @@
-# My Awesome Project
-This project is designed to automate data synchronization between Oracle databases using GoldenGate.
+# 🦠 Covid-19 Data Platform
 
-```
+A personal **Data Engineering** project focused on building a **Data Lake** and **Data Warehouse** for COVID-19 analytics.  
+This platform enables **automated data pipelines** with **daily updates**, supporting downstream analytics and dashboarding in **Power BI**.  
+
+Through this project, you’ll learn how to:
+- Design and build a **Data Lake** and **Data Warehouse** architecture  
+- Apply **data modeling** (Star Schema, Medallion Architecture)  
+- Implement **incremental loading** for fact and dimension tables  
+- Orchestrate end-to-end pipelines using **Apache Airflow**
+
+---
+
+## ⚙️ Technologies
+
+| Layer | Technology | Description |
+|-------|-------------|-------------|
+| **Data Processing** | Apache Spark (SparkSQL) | Transform and process large datasets |
+| **Data Orchestration** | Apache Airflow | Automate and schedule ETL workflows |
+| **Data Storage** | AWS S3 | Data Lake (Bronze → Silver → Gold) |
+|  | AWS Redshift | Data Warehouse for analytics |
+| **Data Modeling** | Star Schema | Fact and Dimension tables for BI |
+
+---
+
+## 🔄 Data Flow
+
+![Data Flow](images/Data%20Flows.png)
+
+---
+
+## 🧰 ETL Architecture
+
+![ETL Tool](images/ELT%20tool.png)
+
+---
+
+## 📁 Project Structure
+
+```bash
 .
 ├── common
 │   ├── config.py
 │   ├── db_utils.py
-│   ├── __init__.py
 │   ├── logger.py
 │   ├── s3_utils.py
 │   └── spark_utils.py
@@ -28,27 +63,40 @@ This project is designed to automate data synchronization between Oracle databas
 │   └── tree.rtf
 ├── ingestion
 │   ├── connection.py
-│   ├── __init__.py
 │   ├── load_landing.py
-│   ├── test.py
 │   └── utils_ingest.py
 ├── load
-│   ├── __init__.py
 │   ├── load_to_dwh.py
 │   └── utils_load.py
+├── transformation
+│   ├── load_to_silver.py
+│   ├── transform_data.py
+│   └── utils_transform.py
 ├── requirements.txt
-├── STRUCTURE.txt
-├── test.py
-└── transformation
-    ├── __init__.py
-    ├── load_to_silver.py
-    ├── transform_data.py
-    └── utils_transform.py
-```
+└── STRUCTURE.txt
 
-# Clone repo
-git clone https://github.com/yourname/project.git
+# How To Run
+This project can be run idenpendently with or without airflow. 
+Refer configs_sample and rename into configs
+## Clone repo
+git clone https://github.com/BlueElf246/covid_data_platform.git
 cd project
 
-# Cài đặt dependencies
+## Install dependencies
+```
+python3 -m venv venv
 pip install -r requirements.txt
+```
+## Install Airflow
+```
+Please follow the instruction
+```
+## Run with airflow
+Run the 'load_DWH' dag from airflow
+## Run without airflow
+Run seperate .py files
+![Data Script Flow](images/Scripts.png)
+
+
+
+
