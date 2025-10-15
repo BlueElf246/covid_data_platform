@@ -74,7 +74,7 @@ Through this project, you’ll learn how to:
 │   └── utils_transform.py
 ├── requirements.txt
 └── STRUCTURE.txt
-
+```
 # How To Run
 This project can be run idenpendently with or without airflow. 
 Refer configs_sample and rename into configs
@@ -97,7 +97,7 @@ install_airflow.txt
 Run the 'load_DWH' dag from airflow
 ## Run without airflow
 Run seperate .py files
-```
+
 <img src="https://github.com/BlueElf246/covid_data_platform/blob/main/images/Scripts.png?raw=true" alt="image" width=“500” height=“500”>
 
 
