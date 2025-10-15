@@ -96,7 +96,7 @@ Run the 'load_DWH' dag from airflow
 ## Run without airflow
 Run seperate .py files
 ```
-<img src="https://github.com/BlueElf246/covid_data_platform/blob/main/images/Scripts.png?raw=true" alt="image" width=“1000” height=“1000”>
+<img src="https://github.com/BlueElf246/covid_data_platform/blob/main/images/Scripts.png?raw=true" alt="image" width=“500” height=“500”>
 
 
 
