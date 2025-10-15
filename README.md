@@ -25,7 +25,7 @@ Through this project, you’ll learn how to:
 
 ## 🔄 Data Flow
 
-<img src="https://github.com/BlueElf246/covid_data_platform/blob/main/images/Data%20Flows.png?raw=true" alt="image" width="300" height="200">
+<img src="https://github.com/BlueElf246/covid_data_platform/blob/main/images/Data%20Flows.png?raw=true" alt="image" width="1000" height="1000">
 
 ---
 
