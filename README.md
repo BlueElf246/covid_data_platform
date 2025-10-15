@@ -1,6 +1,7 @@
 # My Awesome Project
 This project is designed to automate data synchronization between Oracle databases using GoldenGate.
 
+```
 .
 ├── common
 │   ├── config.py
@@ -43,7 +44,7 @@ This project is designed to automate data synchronization between Oracle databas
     ├── load_to_silver.py
     ├── transform_data.py
     └── utils_transform.py
-
+```
 
 # Clone repo
 git clone https://github.com/yourname/project.git
